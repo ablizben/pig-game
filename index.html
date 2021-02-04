@@ -29,9 +29,29 @@
         </section>
 
         <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn--instruct">Instructions</button>
         <button class="btn btn--new">New game</button>
         <button class="btn btn--roll">Roll dice</button>
         <button class="btn btn--hold">Hold</button>
+
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1>Instructions</h1>
+            <p>
+                Welcome to the Pig Game! The object of the game
+                is to reach a score of 20 or above before the other player. To start,
+                Player 1 will start "rolling" the die by clicking on the roll dice button.
+                If the die lands on a number from 2 to 6, you can either press hold to
+                deposit that value from your current score to your overall score and it will
+                then be Player 2's turn, OR you can keep playing by pressing roll. If you roll a 1,
+                Player 2's turn begins and you lose all the points that you currently have.
+                First one to 20 wins. Good luck!
+            </p>
+        </div>
+        <div class="overlay hidden"></div>
+
+
     </main>
     <script src="script.js"></script>
 </body>
